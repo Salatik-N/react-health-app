@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a, a:hover {
+  color: #212529;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+label {
+  margin-bottom: 0;
+}

@@ -1,0 +1,142 @@
+[{
+    "category": "Фрукты",
+    "imgsrc": "https://image.flaticon.com/icons/png/512/1625/1625099.png",
+    "products": [{
+        "id": 0,
+        "name": "Банан",
+        "ckal": 96,
+        "proteins": 1.5,
+        "fats": 0.5,
+        "carbohydrates": 21
+      },
+      {
+        "id": 1,
+        "name": "Персик",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 2,
+        "name": "Персик",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 3,
+        "name": "Банан",
+        "ckal": 96,
+        "proteins": 1.5,
+        "fats": 0.5,
+        "carbohydrates": 21
+      },
+      {
+        "id": 4,
+        "name": "Персик",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 5,
+        "name": "Персик",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 6,
+        "name": "Банан",
+        "ckal": 96,
+        "proteins": 1.5,
+        "fats": 0.5,
+        "carbohydrates": 21
+      },
+      {
+        "id": 7,
+        "name": "Персик",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 8,
+        "name": "Манго",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      }
+    ]
+  },
+  {
+    "category": "Овощи",
+    "imgsrc": "https://image.flaticon.com/icons/png/512/2553/2553701.png",
+    "products": [{
+        "id": 7,
+        "name": "Огурец",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 8,
+        "name": "Помидор",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      }
+    ]
+  },
+  {
+    "category": "Мясо",
+    "imgsrc": "https://image.flaticon.com/icons/png/512/1046/1046820.png",
+    "products": [{
+        "id": 7,
+        "name": "Свинина",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 8,
+        "name": "Телятина",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      }
+    ]
+  }
+  ,
+  {
+    "category": "Морепродукты",
+    "imgsrc": "https://image.flaticon.com/icons/png/512/3082/3082038.png",
+    "products": [{
+        "id": 7,
+        "name": "Рыба",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      },
+      {
+        "id": 8,
+        "name": "Креветки",
+        "ckal": 45,
+        "proteins": 0.9,
+        "fats": 0.1,
+        "carbohydrates": 9.5
+      }
+    ]
+  }
+]

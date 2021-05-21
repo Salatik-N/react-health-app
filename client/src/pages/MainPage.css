@@ -1,0 +1,227 @@
+.main-block{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.left-block{
+    width: 20%;
+    background-color: #fff;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-block{
+    overflow: scroll;
+    overflow-x: hidden;
+    width: 80%;
+    background: linear-gradient(0.25turn,#B1CC61, #f6f6f6);
+}
+
+.user-data{
+    width: 80%;
+    margin: auto;
+}
+.user-name img{
+    width: 70px;
+}
+.user-name{
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user-edit{
+    cursor: pointer;
+}
+.user-edit img{
+    width: 30px;
+}
+.user-feature{
+    display: flex;
+    flex-direction: column;
+}
+.user-feature span{
+    margin: 0.2em 0;
+    font-size: 1.2em;
+}
+
+.menu-block{
+    text-align: center;
+    margin-top: 2em;
+}
+.menu-item{
+    margin: 0 0.5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #B1CC61;
+}
+.menu-item:nth-last-child(1){
+    border-bottom: none;
+}
+
+.search-block{
+    background-color: #fff;
+    margin: 0.5em;
+    border-radius: 5px;
+    padding: 1em 0;
+    text-align: center;
+}
+.search-block__input{
+    border: 1px solid silver;
+    align-items: center;
+    padding: 0 0.5em;
+    margin: auto;
+}
+.search-block__input:hover{
+    border: 1px solid #B1CC61;
+}
+.search-block__input input{
+    width: 97%;
+    border: none;
+    padding: 0.5em;
+}
+.search-block__input input:focus{
+    outline: none;
+}
+.search-block__input svg{
+    right: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+.svg-inline--fa {
+    margin: 0 0.5em;
+}
+
+.block-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item-card, 
+.products-block{
+    background-color: #fff;
+    width: 30%;
+    margin: 1em;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+}
+.item-card-form{
+    width: 55%;
+}
+.item-card-res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39%;
+}
+.units_label{
+    position: absolute;
+    left: 80%;
+    top: 19%;
+    color:gray;
+}
+.products-block{
+    text-align: left;
+    justify-content: space-between;
+}
+.category-title{
+    cursor: pointer;
+}
+.category-title img{
+    width: 25vh;
+}
+.category-block{
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    margin: 0.5em;
+    order: 1;
+}
+.category-block.w-100{
+    order: 0;
+}
+.category-block.w-100 .category-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-right: 3em;
+    flex-direction: row-reverse;
+}
+.category-block.w-100 .category-title h2{
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+.products-info{
+    width: 100%;
+    display: grid;
+}
+.products-info p{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    padding: 0.3em 0;
+    align-items: center;
+}
+.products-info img{
+    width: 30px;
+}
+.cKal-result{
+    display: grid;
+    font-size: 1.5em;
+}
+.cKal-result .result-number{
+    font-size: 3em;
+    font-weight: 600;
+    color: #B1CC61;
+}
+.cKal-result label{
+    font-size: 0.8em;
+}
+.bju_result{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pregnant-info{
+    text-align: left;
+    padding: 1em;
+    background-color: #FDF5D9;
+    margin-top: 1em;
+    color: #676767;
+    font-size: 0.9em;
+}
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    background-position: right calc(1em + .1875rem) center;
+}
+.products-block__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.products-info .products-block__title a{
+    text-decoration: underline;
+    color: #6c757d;
+}
+.products-info .products-block__title a:hover{
+    text-decoration: underline;
+    color: #393f42;
+}
+.row.products-block.w-100{
+    background-color: #ececec;
+}

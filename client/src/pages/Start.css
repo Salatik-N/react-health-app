@@ -1,0 +1,30 @@
+.banner{
+    background-image: url(../assets/home_banner-min.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    align-items: center;
+    display: flex;
+}
+
+.start-title{
+    font-size: 2.5em;
+    width: 100%;
+    color: #315455;
+    line-height: 1.1;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.start-subtitle{
+    font-size: 1.5em;
+    color: #B1CC61;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.banner .row{
+    margin: auto;
+    width: 65%;
+}
