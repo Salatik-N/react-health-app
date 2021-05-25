@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 
 const PATHS_INDEX = {
-  ["/main"]:null,
+  ["/"]:null,
   ["/about"]:0,
 }
 

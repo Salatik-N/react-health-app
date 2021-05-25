@@ -8,7 +8,6 @@
 //     }
 
 // }
-
 const express = require("express");
 const MongoClient = require("mongodb").MongoClient;
 const objectId = require("mongodb").ObjectID;
@@ -21,7 +20,6 @@ app.use(cors())
 const jsonParser = express.json();
 
 const url="mongodb+srv://Nick:Ybrbnf56427821@cluster0.y3b83.mongodb.net/app?retryWrites=true&w=majority"
-
 const mongoClient = new MongoClient(url, {useNewUrlParser: true, useUnifiedTopology: true});
  
 let dbClient;
