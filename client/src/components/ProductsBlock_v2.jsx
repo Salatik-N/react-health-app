@@ -15,13 +15,13 @@ function ProductsBlock_v2({title, data, search, imgsrc}) {
         <div className="category-title"
         onClick = {() => setIsOpen(!isOpen)}>
           <img src={imgsrc} alt={title}/>
-          <h2>{title}</h2>
+          <p>{title}</p>
           <a className={isOpen === false ? "d-none": "h6 w-20 m-auto text-muted"}
           onClick = {() => setIsOpen(!isOpen)}>
             Нажмите, чтобы свернуть
           </a>
         </div>
-        <div className="row">
+        <div className="row justify-content-sm-around">
         {
           isOpen && 
           data.filter(product=>product.name.toLowerCase().includes(search.toLowerCase())).map((product) => (

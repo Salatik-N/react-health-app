@@ -112,7 +112,7 @@
 .products-block{
     background-color: #fff;
     width: 30%;
-    margin: 1em;
+    margin: 0.5em;
     border-radius: 5px;
     text-align: center;
     padding: 1em;
@@ -134,22 +134,24 @@
 }
 .products-block{
     text-align: left;
-    justify-content: space-between;
 }
 .category-title{
     cursor: pointer;
 }
 .category-title img{
-    width: 25vh;
+    width: 20vh;
+    margin-bottom: 1em;
 }
 .category-block{
     background: #fff;
     padding: 1em;
     border-radius: 5px;
-    width: 30%;
+    width: 23%;
     text-align: center;
     margin: 0.5em;
     order: 1;
+    align-items: center;
+    display: grid;
 }
 .category-block.w-100{
     order: 0;
@@ -175,6 +177,9 @@
     border-bottom: 1px solid silver;
     padding: 0.3em 0;
     align-items: center;
+}
+.products-info p:nth-child(5){
+    border-bottom: none;
 }
 .products-info img{
     width: 30px;
@@ -214,6 +219,9 @@
     justify-content: space-between;
     align-items: center;
 }
+.products-info p span{
+    font-size: 0.7em  
+}
 .products-info .products-block__title a{
     text-decoration: underline;
     color: #6c757d;
@@ -222,6 +230,25 @@
     text-decoration: underline;
     color: #393f42;
 }
+
 .row.products-block.w-100{
     background-color: #ececec;
+}
+.category-block p{
+    font-size: 1.5em
+}
+.category-block.w-100 .category-title p{
+    font-size: 2.5em
+}
+.pf-c-chart svg g:nth-child(3) path:nth-child(2),
+.pf-c-chart svg g:nth-child(2) path:nth-child(1){
+    fill: #007bff!important;
+}
+.pf-c-chart svg g:nth-child(3) path:nth-child(3),
+.pf-c-chart svg g:nth-child(2) path:nth-child(2){
+    fill: #dc3545!important;
+}
+.pf-c-chart svg g:nth-child(3) path:nth-child(4),
+.pf-c-chart svg g:nth-child(2) path:nth-child(3){
+    fill: #ffc107!important;
 }
