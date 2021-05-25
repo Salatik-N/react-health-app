@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { ChartPie, ChartThemeColor } from '@patternfly/react-charts';
+import { ChartPie } from '@patternfly/react-charts';
 
 import fatsImg from '../assets/trans-fat.png'
 import caloriesImg from '../assets/calories.png'
