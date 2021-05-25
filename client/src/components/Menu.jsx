@@ -16,7 +16,7 @@ function Menu({items}) {
 
   return (
     <div className="menu-block">
-      <Link to="/main">
+      <Link to="/">
       <div
         className={activeItem === null ? 'menu-item active' : 'menu-item'}
         onClick={() => onActivePage(null)}>

@@ -6,7 +6,9 @@ function ProductsBlock_v2({title, data, search, imgsrc}) {
 
     const [isOpen, setIsOpen] = useState(false);
     useEffect(() => {
-       if(search.length)setIsOpen(true)
+       if(search.length){
+        setIsOpen(true)
+       }
     }, [search])
 
   return (

@@ -18,6 +18,12 @@ class SearchHeader extends Component{
       search: this.state.search
     })
   }
+
+  handleKeyPress = (event) => {
+    if(event.key === 'Enter'){
+      this.onSearch()
+    }
+  }
   
   render(){
       return(
@@ -27,7 +33,8 @@ class SearchHeader extends Component{
           placeholder="Поиск продуктов"
           onChange={(event)=>this.setState({
             search: event.target.value
-          })}/>
+          })}
+          onKeyPress={this.handleKeyPress}/>
           <FontAwesomeIcon icon={faSearch} onClick={this.onSearch.bind(this)}/>
       </div>
     </div>

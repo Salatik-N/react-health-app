@@ -1,23 +1,13 @@
 import React from "react"
-import Axios from 'axios'
 import {Route, Switch} from 'react-router-dom'
-import {UserInfo, Menu, Main, AboutProducts} from '../components'
+import { Menu, Main, AboutProducts} from '../components'
 import './MainPage.css'
 
 function MainPage() {
 
-  const [products, setProducts] = React.useState([]);
-
-  React.useEffect(() => {
-    Axios.get('http://localhost:3000/db.json').then(({data}) => {
-      setProducts(data)
-    })
-  }, []);
-
   return (
     <div className="main-block">
       <div className="left-block">
-        {/*<UserInfo/>*/}
         <Menu
           onChange={(name) => alert(name)}
           items={
@@ -35,11 +25,11 @@ function MainPage() {
       </div>
       <div className="right-block">
         <Switch>
-          <Route path="/main">
+          <Route exact path="/">
             <Main/>
           </Route>
           <Route path="/about">
-            <AboutProducts items={products}/>
+            <AboutProducts/>
           </Route>
         </Switch>
       </div>
