@@ -18,8 +18,7 @@
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
     "build": "npm run build --prefix client",
-    "dev": "cross-env NODE_ENV=production concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd react-ui/ && npm install --only=dev && NODE_ENV=development npm install --no-shrinkwrap && npm run build"
+    "dev": "cross-env NODE_ENV=production concurrently \"npm run server\" \"npm run client\""
   },
   "eslintConfig": {
     "extends": [
