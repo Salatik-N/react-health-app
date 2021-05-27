@@ -14,7 +14,7 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js",
+    "start": "cross-env NODE_ENV=production concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon app.js",
     "client": "npm run start --prefix client",
     "client:build": "npm run build --prefix client",
