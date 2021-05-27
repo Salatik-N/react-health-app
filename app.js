@@ -7,7 +7,7 @@ const path = require('path')
 const compression = require('compression')
 
 const normalizePort = port => parseInt(port, 10)
-const PORT = normalizePort(process.env.PORT || 5000)
+const PORT = normalizePort(process.env.PORT || 3000)
 
 const app = express();
 
