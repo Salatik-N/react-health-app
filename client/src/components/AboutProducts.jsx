@@ -8,7 +8,7 @@ function AboutProducts() {
   const [products, setProducts] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   React.useEffect(() => {
-    Axios.get('http://localhost:5000/api/users').then(({data}) => {
+    Axios.get('/api/users').then(({data}) => {
       setProducts(data)
       setIsLoading(false)
     })
