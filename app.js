@@ -10,7 +10,6 @@ const normalizePort = port => parseInt(port, 10)
 const PORT = normalizePort(process.env.PORT || 5000)
 
 const app = express();
-const dev = app.get('env') !== 'production'
 
 app.use(cors())
 let dbClient;
@@ -37,21 +36,16 @@ app.get("/api/users", function(req, res){
          
     });
 
-if(!dev){
-    app.disable('x-powered-by')
-    app.use(compression())
-    app.use(morgan('common'))
 
-    app.use(express.static(path.resolve(__dirname, 'client', 'build')))
+app.disable('x-powered-by')
+app.use(compression())
+app.use(morgan('common'))
 
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    })
-}
+app.use(express.static(path.resolve(__dirname, 'client', 'build')))
 
-if (dev) {
-    app.use(morgan('dev'))
-}
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+})
 
 const server = createServer(app)
 
