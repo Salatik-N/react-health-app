@@ -2,6 +2,7 @@ import React, {useState} from "react"
 import Axios from 'axios'
 
 import { ProductsBlock_v2, SearchHeader } from './index'
+import { Spinner } from "react-bootstrap";
 
 function AboutProducts() {
 
@@ -16,15 +17,16 @@ function AboutProducts() {
 
   const [search, setSearch] = useState('')
 
-  if (isLoading) {
-    return <span>Загрузка...</span>
-  }
-
   return (
     <div>
         <SearchHeader 
         onSearch = {setSearch}
         name={products.name}/>
+        {isLoading ? (
+        <div className="spinner-block">
+          <Spinner animation="border" variant="light" />
+          <span>Загрузка...</span>
+        </div>) : (
       <div className="block-cards">
           {
             products.filter(category=>category.products.find(product=>product.name.toLowerCase().includes(search.toLowerCase())
@@ -37,7 +39,7 @@ function AboutProducts() {
               setIsLoading={setIsLoading}/>
             )
           }
-      </div>
+      </div>)}
     </div>
   )
 }
